@@ -29,8 +29,9 @@ public class LoginController {
 		ModelAndView mav = null;
 		User user = loginService.validateLogin(login);
 		if (null != user) {
-			mav = new ModelAndView("UserMainPage");
-			mav.addObject("firstname", user.getFirstname());
+			mav = new ModelAndView("userMainPage");
+			mav.addObject("nickname", user.getNickname());
+			mav.addObject("user", user.getUsername());
 		} else {
 			mav = new ModelAndView("login");
 			mav.addObject("message", "Username or Password is wrong!!");
@@ -43,8 +44,9 @@ public class LoginController {
 			@ModelAttribute("user") User login) {
 		ModelAndView mav = null;
 		loginService.saveLogin(login);
-		mav = new ModelAndView("UserMainPage");
-		mav.addObject("firstname", login.getFirstname());
+		mav = new ModelAndView("userMainPage");
+		mav.addObject("nickname", login.getNickname());
+		mav.addObject("user", login.getUsername());
 		return mav;
 	}
 	

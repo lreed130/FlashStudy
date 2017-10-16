@@ -28,9 +28,14 @@
 						id="password" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="firstname">FirstName</form:label></td>
-				<td><form:input path="firstname" name="firstname"
-						id="firstname" /></td>
+				<td><form:label path="nickname">Nickname</form:label></td>
+				<td><form:input path="nickname" name="nickname"
+						id="nickname" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="email">E-mail</form:label></td>
+				<td><form:input path="email" name="email" id="email" />
+				</td>
 			</tr>
 			<tr>
 				<td></td>

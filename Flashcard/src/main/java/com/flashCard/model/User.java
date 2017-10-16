@@ -3,18 +3,21 @@ package com.flashCard.model;
 public class User {
 	private String username;
 	private String password;
-	private String firstname;
+	private String nickname;
+	private String email;
+	
 
 	public User() {
 		
 		
 	}
 	
-	public User(String username, String password, String firstname) {
+	public User(String username, String password, String nickname, String email) {
 		super();
 		this.username = username;
 		this.password = password;
-		this.firstname = firstname;
+		this.nickname = nickname;
+		this.email = email;
 	}
 
 	public String getUsername() {
@@ -33,12 +36,22 @@ public class User {
 		this.password = password;
 	}
 
-	public String getFirstname() {
-		return firstname;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	
+	
 }
