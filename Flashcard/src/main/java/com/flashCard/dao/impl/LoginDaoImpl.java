@@ -59,7 +59,6 @@ public class LoginDaoImpl implements LoginDao {
 			e.printStackTrace();
 		}
 		 
-
 	 try {
 		 conn.close();
 		} 
