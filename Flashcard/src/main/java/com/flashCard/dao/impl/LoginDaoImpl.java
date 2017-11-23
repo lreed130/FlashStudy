@@ -72,7 +72,7 @@ public class LoginDaoImpl implements LoginDao {
 		String dbPassword = "password";
 		Connection conn = null;
 		ModelAndView mav = null;
-		
+
 		Statement st;
 		try {
 			st = conn.createStatement();
