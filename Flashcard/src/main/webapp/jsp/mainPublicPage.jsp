@@ -24,5 +24,17 @@
 	</table>
 
 	<p>This is where we put the public flashcard sets</p>
+	<font size ="5">Public Flash Card Sets</font>
+	<table align="center">
+	<tr>
+		<th>FlashCardSet</th>
+		<th>View</th>
+		<th>Print</th>
+		</tr>
+		<tr></tr>
+		<c:forEach var="PublicFlashCardSets" items="{PublicFlashCardList}">
+					<td><a href="FlashCardSet.Name"></a></td>, <td><a href="FlashCardSet.Print"></a></td>, <tr></tr>
+		</c:forEach>
+	</table>
 </body>
 </html>
